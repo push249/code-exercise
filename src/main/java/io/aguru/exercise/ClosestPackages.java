@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class ClosestPackages {
 	
-	public List<PairInt> closetLocations(int totalCrates,
+	public List<PairInt> closestLocations(int totalCrates,
 			List<PairInt> allocations,
 			int truckCapacity){
 		Map<Double, PairInt> distanceMap = new HashMap<Double, PairInt>();

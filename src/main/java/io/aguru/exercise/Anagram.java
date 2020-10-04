@@ -4,18 +4,20 @@ import java.util.Arrays;
 
 public class Anagram {
 
-	public boolean anagram(String s1, String s2) {
+	public boolean isAnagram(String s1, String s2) {
 
-		if (s1.length() != s2.length()) {
+		if (s1.length() == 0 || s2.length() == 0) {
 			return false;
 		} else {
-			char[] stringToCharArray = s1.toCharArray();
+			StringBuilder sb = new StringBuilder("");
+			char[] stringToCharArray = s1.toLowerCase().toCharArray();
 			Arrays.sort(stringToCharArray);
-			s1 = Arrays.toString(stringToCharArray);
-			stringToCharArray = s2.toCharArray();
+			s1 = sb.append(stringToCharArray).toString().trim();
+			sb = new StringBuilder("");
+			stringToCharArray = s2.toLowerCase().toCharArray();
 			Arrays.sort(stringToCharArray);
-			s2 = Arrays.toString(stringToCharArray);
-			if (s1.equals(s2)) {
+			s2 = sb.append(stringToCharArray).toString().trim();
+			if (s1.equalsIgnoreCase(s2)) {
 				return true;
 			} else {
 				return false;

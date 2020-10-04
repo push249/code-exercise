@@ -8,7 +8,42 @@ class AlphabetCounterTest {
 
 	@Test
 	void testCounter() {
-		fail("Not yet implemented");
+		
+		String s = "BALLOON";
+		
+		AlphabetCounter alphabetCounter = new AlphabetCounter();
+		int n = alphabetCounter.counter(s);
+		assertEquals(1, n);
+	}
+	
+	@Test
+	void testCounter2() {
+		
+		String s = "BALLBLAAOON";
+		
+		AlphabetCounter alphabetCounter = new AlphabetCounter();
+		int n = alphabetCounter.counter(s);
+		assertEquals(1, n);
+	}
+	
+	@Test
+	void testCounter3() {
+		
+		String s = "";
+		
+		AlphabetCounter alphabetCounter = new AlphabetCounter();
+		int n = alphabetCounter.counter(s);
+		assertEquals(0, n);
+	}
+	
+	@Test
+	void testCounter4() {
+		
+		String s = "QAWABAWONL";
+		
+		AlphabetCounter alphabetCounter = new AlphabetCounter();
+		int n = alphabetCounter.counter(s);
+		assertEquals(0, n);
 	}
 
 }
