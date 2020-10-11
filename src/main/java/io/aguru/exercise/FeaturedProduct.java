@@ -15,10 +15,10 @@ public class FeaturedProduct {
 		Map<String, Integer> productCount = new HashMap<String, Integer>();
 		for (String s : productList) {
 			if (productCount.containsKey(s)) {
-				int n = productCount.get("s");
-				productCount.put("s", ++n);
+				int n = productCount.get(s);
+				productCount.put(s, ++n);
 			} else {
-				productCount.put("s", 1);
+				productCount.put(s, 1);
 			}
 		}
 		

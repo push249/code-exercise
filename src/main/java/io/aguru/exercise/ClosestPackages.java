@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import io.aguru.exercise.model.PairInt;
+
 public class ClosestPackages {
 	
 	public List<PairInt> closestLocations(int totalCrates,
@@ -27,12 +29,5 @@ public class ClosestPackages {
 			}
 		}
 		return returnList;
-	}
-	
-	class PairInt{	
-		public int first;
-		public int second;
-		
-	}
-	
+	}	
 }
