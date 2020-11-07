@@ -12,7 +12,7 @@ class AlphabetCounterTest {
 		String s = "BALLOON";
 		
 		AlphabetCounter alphabetCounter = new AlphabetCounter();
-		int n = alphabetCounter.counter(s);
+		int n = alphabetCounter.solution(s);
 		assertEquals(1, n);
 	}
 	
@@ -22,7 +22,7 @@ class AlphabetCounterTest {
 		String s = "BALLBLAAOON";
 		
 		AlphabetCounter alphabetCounter = new AlphabetCounter();
-		int n = alphabetCounter.counter(s);
+		int n = alphabetCounter.solution(s);
 		assertEquals(1, n);
 	}
 	
@@ -32,7 +32,7 @@ class AlphabetCounterTest {
 		String s = "";
 		
 		AlphabetCounter alphabetCounter = new AlphabetCounter();
-		int n = alphabetCounter.counter(s);
+		int n = alphabetCounter.solution(s);
 		assertEquals(0, n);
 	}
 	
@@ -42,7 +42,7 @@ class AlphabetCounterTest {
 		String s = "QAWABAWONL";
 		
 		AlphabetCounter alphabetCounter = new AlphabetCounter();
-		int n = alphabetCounter.counter(s);
+		int n = alphabetCounter.solution(s);
 		assertEquals(0, n);
 	}
 

@@ -10,7 +10,7 @@ class BribeSwapTest {
 	void testMinimumBribes() {
 		BribeSwap bs = new BribeSwap();
 		int[] q = {1, 2, 5, 3, 7, 8, 6, 4};
-		bs.minimumBribes(q);
+		bs.solution(q);
 	}
 
 }

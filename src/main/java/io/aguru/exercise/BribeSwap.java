@@ -2,7 +2,7 @@ package io.aguru.exercise;
 
 public class BribeSwap {
 
-	public void minimumBribes(int[] q) {
+	public void solution(int[] q) {
 		int bribe = 0;	
 		for(int i = 0; i < q.length; i++) {
 			if((q[i] - (i+1)) > 2) {

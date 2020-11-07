@@ -21,7 +21,7 @@ class FeaturedProductTest {
 		productList.add("Blue");
 		productList.add("Orange");
 		productList.add("Orange");
-		String featuredProduct = fp.getFeaturedProduct(productList);
+		String featuredProduct = fp.solution(productList);
 		assertEquals("Orange", featuredProduct);
 	}
 

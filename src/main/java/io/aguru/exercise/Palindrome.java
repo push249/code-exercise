@@ -2,7 +2,7 @@ package io.aguru.exercise;
 
 public class Palindrome {
 
-	public boolean palindrome(String str) {
+	public boolean solution(String str) {
 
 		char[] stringToCharArray = str.toCharArray();
 		boolean check = false;

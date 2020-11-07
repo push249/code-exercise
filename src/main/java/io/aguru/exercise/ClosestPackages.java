@@ -10,7 +10,7 @@ import io.aguru.exercise.model.PairInt;
 
 public class ClosestPackages {
 	
-	public List<PairInt> closestLocations(int totalCrates,
+	public List<PairInt> solution(int totalCrates,
 			List<PairInt> allocations,
 			int truckCapacity){
 		Map<Double, PairInt> distanceMap = new HashMap<Double, PairInt>();

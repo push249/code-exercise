@@ -1,7 +1,7 @@
 package io.aguru.exercise;
 
 public class JumpingOnClouds {
-	public int jumpingOnClouds(int[] c) {
+	public int solution(int[] c) {
 		int jumps = 0;
 		int n = c.length;
 		int i = 0;

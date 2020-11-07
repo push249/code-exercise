@@ -9,7 +9,7 @@ class JumpingOnCloudsTest {
 	@Test
 	void testJumpingOnClouds() {
 		JumpingOnClouds joc = new JumpingOnClouds();
-		int n = joc.jumpingOnClouds(new int[] {0,0,1,0,0,1,0});
+		int n = joc.solution(new int[] {0,0,1,0,0,1,0});
 		assertEquals(4, n);
 	}
 

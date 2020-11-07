@@ -2,7 +2,7 @@ package io.aguru.exercise;
 
 public class LeftRotation {
 
-	public int[] rotLeft(int[] a, int d) {
+	public int[] solution(int[] a, int d) {
 		
 		int[] rotated = new int[a.length];
 		for(int i = 0; i< a.length; i++) {

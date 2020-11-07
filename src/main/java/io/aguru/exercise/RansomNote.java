@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class RansomNote {
 
-	public void checkMagazine(String[] magazine, String[] note) {
+	public void solution(String[] magazine, String[] note) {
 			
 		if(note.length > magazine.length) {
 			System.out.println("No");

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PrisonGateArea {
 
-	public long prison(int n, int m, List<Integer> h, List<Integer> v) {
+	public long solution(int n, int m, List<Integer> h, List<Integer> v) {
 
 		Collections.sort(h);
 		Collections.sort(v);

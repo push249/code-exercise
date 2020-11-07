@@ -3,7 +3,7 @@ package io.aguru.exercise;
 import java.util.Arrays;
 
 public class NumberMissingSequence {
-	public int solutionArr(int[] A) {
+	public int solution(int[] A) {
 		if (A.length == 1 || A.length == 0) {
 			return 1;
 		}

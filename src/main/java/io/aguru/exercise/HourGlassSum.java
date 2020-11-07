@@ -2,7 +2,7 @@ package io.aguru.exercise;
 
 public class HourGlassSum {
 
-	public int hourglassSum(int[][] arr) {
+	public int solution(int[][] arr) {
 		int l = arr.length;
 		int b = arr[0].length;
 		int max = -63;

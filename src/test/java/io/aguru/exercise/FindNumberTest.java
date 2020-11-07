@@ -22,7 +22,7 @@ class FindNumberTest {
 		intList.add(451);
 		intList.add(91);
 
-		String result = fn.findNumber(intList, 12);
+		String result = fn.solution(intList, 12);
 
 		assertEquals("YES", result);
 

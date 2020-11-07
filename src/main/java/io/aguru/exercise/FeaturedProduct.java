@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class FeaturedProduct {
 
 	@SuppressWarnings("rawtypes")
-	public String getFeaturedProduct(List<String> productList) {
+	public String solution(List<String> productList) {
 
 		String featuredProduct = "";
 		int count = 0;

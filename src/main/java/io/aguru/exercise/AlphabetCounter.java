@@ -1,7 +1,7 @@
 package io.aguru.exercise;
 
 public class AlphabetCounter {
-	public int counter(String str) {
+	public int solution(String str) {
 
 		int sLength = str.length();
 		int count = 0;

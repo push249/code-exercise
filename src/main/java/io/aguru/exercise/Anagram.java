@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Anagram {
 
-	public boolean isAnagram(String s1, String s2) {
+	public boolean solution(String s1, String s2) {
 
 		if (s1.length() == 0 || s2.length() == 0) {
 			return false;

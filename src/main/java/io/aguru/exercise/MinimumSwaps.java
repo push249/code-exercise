@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MinimumSwaps {
 
-	public int minimumSwaps(int[] arr) {
+	public int solution(int[] arr) {
 		int swaps = 0;	
 		Map<Integer, Integer> posMap = new HashMap<Integer, Integer>();
 		for(int i = 0; i < arr.length ; i++) {

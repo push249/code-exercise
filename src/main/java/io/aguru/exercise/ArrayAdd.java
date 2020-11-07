@@ -2,7 +2,7 @@ package io.aguru.exercise;
 
 public class ArrayAdd {
 
-	public int arrayAdd(int arr[]) {
+	public int solution(int arr[]) {
 		int max = 0;
 		int n = arr.length;
 		int temp[] = new int[n - 1];

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PrimeNumber {
 
-	public int returnPrime(int n) {
+	public int solution(int n) {
 		int primeNum = 0;
 		int i = 4;
 		ArrayList<Integer> arr = new ArrayList<Integer>();

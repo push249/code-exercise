@@ -3,7 +3,7 @@ package io.aguru.exercise;
 import java.util.Arrays;
 
 public class Permutation {
-	 public int solutionPermutation(int[] A) {
+	 public int solution(int[] A) {
 	        Arrays.sort(A);
 	        int n = A.length;
 	        if(A[n-1] == n){

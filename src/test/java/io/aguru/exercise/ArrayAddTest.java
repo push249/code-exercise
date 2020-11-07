@@ -11,7 +11,7 @@ class ArrayAddTest {
 		
 		ArrayAdd arrayAdd = new ArrayAdd();
 		int arr[] = new int[] { 10, -2, 5, 6, -5 };
-		int n = arrayAdd.arrayAdd(arr);
+		int n = arrayAdd.solution(arr);
 		assertEquals(11, n);
 		
 	}
@@ -21,7 +21,7 @@ class ArrayAddTest {
 		
 		ArrayAdd arrayAdd = new ArrayAdd();
 		int arr[] = new int[] { 13, -2, 5, 6, -5, 12, 0 , 19 };
-		int n = arrayAdd.arrayAdd(arr);
+		int n = arrayAdd.solution(arr);
 		assertEquals(19, n);
 		
 	}
@@ -31,7 +31,7 @@ class ArrayAddTest {
 		
 		ArrayAdd arrayAdd = new ArrayAdd();
 		int arr[] = new int[] { 13, -2, 550, 600, -50, 1200, 0 , 19, 100, -1000, 200, 4 };
-		int n = arrayAdd.arrayAdd(arr);
+		int n = arrayAdd.solution(arr);
 		assertEquals(1200, n);
 		
 	}

@@ -2,7 +2,7 @@ package io.aguru.exercise;
 
 public class ArrayManipulation {
 
-	public long arrayManipulation(int n, int[][] queries) {
+	public long solution(int n, int[][] queries) {
 		long max = 0;
 		int arr[] = new int[n+1];
 		long x = 0;

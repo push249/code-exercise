@@ -39,7 +39,7 @@ class ClosestPackagesTest {
             add(new PairInt(21,10));
               }};
 		
-		List<PairInt> returnedList = closestPackages.closestLocations(totalCrates, allocations , truckCapacity);
+		List<PairInt> returnedList = closestPackages.solution(totalCrates, allocations , truckCapacity);
 		Collections.sort(validList);
 		Collections.sort(returnedList);
 		

@@ -12,7 +12,7 @@ class AnagramTest {
 		String s1 = "LISTEN";
 		String s2 = "SILENT";
 		Anagram anagram = new Anagram();
-		boolean result = anagram.isAnagram(s1, s2);
+		boolean result = anagram.solution(s1, s2);
 		
 		assertEquals(true, result);
 		
@@ -24,7 +24,7 @@ class AnagramTest {
 		String s1 = "";
 		String s2 = "SILENT";
 		Anagram anagram = new Anagram();
-		boolean result = anagram.isAnagram(s1, s2);
+		boolean result = anagram.solution(s1, s2);
 		
 		assertEquals(false, result);
 		
@@ -36,7 +36,7 @@ class AnagramTest {
 		String s1 = "Astronomer";
 		String s2 = "Moon starer";
 		Anagram anagram = new Anagram();
-		boolean result = anagram.isAnagram(s1, s2);
+		boolean result = anagram.solution(s1, s2);
 		
 		assertEquals(true, result);
 		

@@ -10,7 +10,7 @@ class ArrayFindTest {
 	void testSolutionArray() {
 		
 		ArrayFind arrayFind = new ArrayFind();
-		int n = arrayFind.solutionArray(new int[] {9,3,9,3,9,11,9});
+		int n = arrayFind.solution(new int[] {9,3,9,3,9,11,9});
 		assertEquals(11,n);
 		
 	}
@@ -19,7 +19,7 @@ class ArrayFindTest {
 	void testSolutionArray2() {
 		
 		ArrayFind arrayFind = new ArrayFind();
-		int n = arrayFind.solutionArray(new int[] {9,13,9,3,9,131,19,19});
+		int n = arrayFind.solution(new int[] {9,13,9,3,9,131,19,19});
 		assertEquals(3,n);
 		
 	}
@@ -28,7 +28,7 @@ class ArrayFindTest {
 	void testSolutionArray3() {
 		
 		ArrayFind arrayFind = new ArrayFind();
-		int n = arrayFind.solutionArray(new int[] {0,0,0});
+		int n = arrayFind.solution(new int[] {0,0,0});
 		assertEquals(0,n);
 		
 	}

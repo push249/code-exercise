@@ -2,7 +2,7 @@ package io.aguru.exercise;
 
 public class CountingValleys {
 	
-	public int countingValleys(int n, String s) {
+	public int solution(int n, String s) {
         int count = 0;
         int seaLevel = 0;
         int level = 0;
