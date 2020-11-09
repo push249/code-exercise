@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 class MinimumSumTest {
 
+	@SuppressWarnings("serial")
 	@Test
 	void testSolution() {
 		MinimumSum ms = new MinimumSum();

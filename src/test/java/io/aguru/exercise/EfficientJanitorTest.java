@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 class EfficientJanitorTest {
 
+	@SuppressWarnings({ "serial"})
 	@Test
 	void testSolution() {
 		EfficientJanitor eJ  = new EfficientJanitor();

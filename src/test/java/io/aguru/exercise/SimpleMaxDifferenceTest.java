@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 class SimpleMaxDifferenceTest {
 
+	@SuppressWarnings("serial")
 	@Test
 	void testSolution() {
 		List<Integer> arr = new ArrayList<Integer>(){{
@@ -24,9 +25,11 @@ class SimpleMaxDifferenceTest {
               
 	}
 	
+	@SuppressWarnings("serial")
 	@Test
 	void testSolution1() {
-		List<Integer> arr = new ArrayList<Integer>(){{
+		List<Integer> arr = new ArrayList<Integer>(){
+		{
             add(2);
             add(7);
             add(4);
@@ -42,6 +45,7 @@ class SimpleMaxDifferenceTest {
               
 	}
 	
+	@SuppressWarnings("serial")
 	@Test
 	void testSolution2() {
 		List<Integer> arr = new ArrayList<Integer>(){{
@@ -58,6 +62,7 @@ class SimpleMaxDifferenceTest {
         assertEquals(-1, maxDiff);         
 	}
 	
+	@SuppressWarnings("serial")
 	@Test
 	void testSolution3() {
 		List<Integer> arr = new ArrayList<Integer>(){{
@@ -74,6 +79,7 @@ class SimpleMaxDifferenceTest {
         assertEquals(-1, maxDiff);         
 	}
 	
+	@SuppressWarnings("serial")
 	@Test
 	void testSolution4() {
 		List<Integer> arr = new ArrayList<Integer>(){{

@@ -77,17 +77,26 @@ class CountTripletsTest {
 		CountTriplets ct = new CountTriplets();
 		@SuppressWarnings("serial")
 		List<Long> arr = new ArrayList<Long>(){{
-            add((long) 1);
-            add((long) 1);
-            add((long) 1);
-            add((long) 1);
-            add((long) 1);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
+            add((long) 1237);
               }};
+        int i = 10;    
+        while(i < 100000) {
+        	arr.add((long) 1237);
+        	i++;
+        }      
         long r = 1;      
 		long count = ct.solution(arr, r);
-		assertEquals(9, count);
+		System.out.println(count);
+		//assertEquals(166661666700000, count);
 	}
 	
-	
-
 }

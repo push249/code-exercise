@@ -9,24 +9,46 @@ public class CountTriplets {
 	public long solution(List<Long> arr, long r) {
 		long count = 0;
 	
-		Map<Long, Integer> tripletMap = new HashMap<Long, Integer>();
+		Map<Long, Long> tripletRightMap = new HashMap<Long, Long>();
+		Map<Long, Long> tripletLeftMap = new HashMap<Long, Long>();
 		
 		for(long l : arr) {
-			if(tripletMap.containsKey(l)) {
-				int occ = tripletMap.get(l) + 1;
-				tripletMap.put(l, occ);
+			if(tripletRightMap.containsKey(l)) {
+				long occ = tripletRightMap.get(l) + 1;
+				tripletRightMap.put(l, occ);
 			}else {
-				tripletMap.put(l, 1);
+				tripletRightMap.put(l, 1L);
 			}
 		}
 		
-		for(long l : arr) {
-			long second = l;
-			long first = second/r;
-			long third = second * r;
-			if(tripletMap.containsKey(first) && tripletMap.containsKey(third)) {
-				count += tripletMap.get(first) * tripletMap.get(third);
+		for(long second : arr) {
+			
+			long occ = tripletRightMap.get(second);
+			tripletRightMap.put(second, occ-1);
+			
+			long first = 0;
+			if(second % r == 0) {
+				first = second / r;
 			}
+			long firstOcc = 0;
+			
+			long third = second * r;
+			long thirdOcc = 0;
+			
+			if(tripletLeftMap.containsKey(first)) {
+				firstOcc = tripletLeftMap.get(first);
+			}			
+			if(tripletRightMap.containsKey(third)) {
+				thirdOcc = tripletRightMap.get(third);
+			}
+			
+			count += thirdOcc * firstOcc;
+			if(tripletLeftMap.containsKey(second)) {
+				occ = tripletLeftMap.get(second);
+				tripletLeftMap.put(second, occ+1);
+			}else {
+				tripletLeftMap.put(second, 1L);
+			}	
 		}
 		
 		return count;
