@@ -49,6 +49,10 @@ public class FirstClass {
 		List<Integer> intList = firstModelList.stream().map(FirstModel::getI).collect(Collectors.toList());
 		
 		intList.forEach(System.out::println);
+		
+		
+		
+		
 
 	}
 
